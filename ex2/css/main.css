@@ -1,0 +1,36 @@
+/*styles for html5 and css3 layout*/
+
+* { padding: 0px; margin: 0px;}
+#wrapper { width: 100%; overflow: hidden; background: #fff; font-family: arial;}
+#wrapper header { text-align: center; float: left; width: 100%; color: #000; font-weight: bold; background: #b4b4b4; padding:40px 0px; font-size: 36px; margin:5px 2px 20px; height: 40px; }
+#wrapper nav { display: block; margin: 0px auto 20px; overflow: hidden; width:820px; padding: 15px;
+	/*fallback for gradient*/
+	background: url("../images/bg.png") 0 0 repeat-x;
+	background: -webkit-linear-gradient(top, #2e5e89, #5098da); /*chrome , safari*/
+	background: -moz-linear-gradient(top,#2e5e89, #5098da); 	/*firefox*/
+	background: -o-linear-gradient(top, #2e5e89, #5098da); 	/*opera*/
+	background: -ms-linear-gradient(top, #2e5e89, #5098da);  	/*IE 10*/
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	font-size: 14px;
+	height: 20px;
+	line-height: 20px;
+}
+#wrapper nav a { color:#fff; text-decoration: none; width: 100%;}
+#wrapper .sub-header { margin: 0px auto; display: block; width:808px; /*height: 10px;*/ padding:20px; 
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border:solid 1px #b4b4b4;
+	overflow: hidden;
+}
+#wrapper .sub-header ul { list-style-type: none; float: left; width: 100%;}
+#wrapper .sub-header ul li { float: left; }
+#wrapper .sub-header ul li.for-image-border { width: 300px; margin-left: 20px;
+	border-image { }
+}
