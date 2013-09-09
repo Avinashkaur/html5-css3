@@ -1,11 +1,9 @@
 /*styles for html5 and css3 layout*/
 
 * { padding: 0px; margin: 0px;}
-#wrapper { width: 100%; overflow: hidden; background: #fff; font-family: arial;}
+#wrapper { width: 100%; background: #fff; font-family: arial;}
 #wrapper header { text-align: center; float: left; width: 100%; color: #000; font-weight: bold; background: #b4b4b4; padding:40px 0px; font-size: 36px; margin:5px 2px 20px; height: 40px; }
 #wrapper nav { display: block; margin: 0px auto 20px; overflow: hidden; width:820px; padding: 15px;
-	/*fallback for gradient*/
-	background: url("../images/bg.png") 0 0 repeat-x;
 	background: -webkit-linear-gradient(top, #2e5e89, #5098da); /*chrome , safari*/
 	background: -moz-linear-gradient(top,#2e5e89, #5098da); 	/*firefox*/
 	background: -o-linear-gradient(top, #2e5e89, #5098da); 	/*opera*/
@@ -18,8 +16,9 @@
 	font-size: 14px;
 	height: 20px;
 	line-height: 20px;
+	color:#fff;
 }
-#wrapper nav a { color:#fff; text-decoration: none; width: 100%;}
+#wrapper nav a { color:#fff; text-decoration: none; width: 100%; margin:0px 10px;}
 #wrapper .sub-header { margin: 0px auto; display: block; width:808px; /*height: 10px;*/ padding:20px; 
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -31,6 +30,21 @@
 }
 #wrapper .sub-header ul { list-style-type: none; float: left; width: 100%;}
 #wrapper .sub-header ul li { float: left; }
-#wrapper .sub-header ul li.for-image-border { width: 300px; margin-left: 20px;
-	border-image { }
+#wrapper .sub-header ul li.for-image-border { margin-left: 25px;}
+#wrapper .sub-header ul li.for-image-border .title { margin: 3px 20px 10px; font-size: 24px; color: #000; width:340px; }
+#wrapper .sub-header ul li.for-image-border .desc{ width: 300px; border-width: 20px 10px 20px 20px;  border-style: solid; font-size: 14px; color:#3f3d3f;
+  -moz-border-image:url(../images/image.png) 30 30 round;
+  -webkit-border-image:url(../images/image.png) 30 30 round;
+  -o-border-image:url(../images/image.png) 30 30 round;
+  border-image:url(../images/image.png) 30 30 round;
+  padding:5px;
 }
+#wrapper .content { margin: 40px auto; 	width: 850px;
+	column-count: 3;
+	-moz-column-count: 3;
+	-webkit-column-count: 3; 	
+	column-gap: 20px;
+	-webkit-column-gap: 20px;
+	-moz-column-gap: 20px;
+}
+#wrapper footer { width: 100%; background-color: #000; color:#fff; text-align: center; height:40px; font-size: 36px; padding:40px 0px; }
