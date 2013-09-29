@@ -1,0 +1,95 @@
+/*styles for exercise responsive web template*/
+
+/*general styles*/
+* { padding:0px; margin: 0px;}
+.highlight, .active{ color:#f26700;}
+.u-case { text-transform: uppercase;  }
+.align-c { text-align: center;}
+/*general css ends*/
+
+article { /*margin:0px auto; width:80%;*/ width:100%; float:left; font-family:arial;}
+article section.nav-bar, article section.display-images {
+	background: #fafafa; /*fallback for gradient*/
+	background: -webkit-linear-gradient(top, #f0f0f0, #fafafa);
+	background: -moz-linear-gradient(top, #f0f0f0, #fafafa);
+	background: -o-linear-gradient(top, #f0f0f0, #fafafa);
+	background: -ms-linear-gradient(top, #f0f0f0, #fafafa);
+	width:100%;
+	float:left;
+}
+nav { width:80%; margin:90px auto; overflow: hidden;}
+nav a { letter-spacing: 3px; text-decoration: none; color: #5a4a4d; font-size:16px; float: left;text-align: center; margin:0px 0.5%;}
+nav a.home { font-size: 40px;margin-bottom:40px;width: 18%;font-weight: bold; letter-spacing: 5px;}
+nav a.left { margin-top: 10px; margin-bottom: 10px; width: 17%;}
+nav a.right { margin-top: 10px; margin-bottom: 10px; width: 14%;}
+
+header { background:#fff; width: 100%; float: left; font-size: 20px; color:#4b4b4b; padding: 45px 0px; line-height:50px;
+	-webkit-box-shadow: 5px 0px 10px 4px #dadada;
+	-moz-box-shadow: 5px 0px 10px 4px #dadada;
+	-o-box-shadow: 5px 0px 10px 4px #dadada;
+	-ms-box-shadow: 5px 0px 10px 4px #dadada;
+	box-shadow: 5px 0px 10px 4px #dadada;
+	letter-spacing: 3px;
+}
+header .main { font-size: 50px;}
+article section.display-images { margin-top:5px;}
+article section.display-images ul { margin:50px auto; width:80%; list-style-type: none; overflow:hidden;}
+article section.display-images ul li { float: left; margin-left:4%; max-width:300px; margin-top:10px; height:400px; color:#4b494c;}
+article section.display-images ul li .for-image { display: table; max-height:250px; max-width:300px;}
+article section.display-images ul li .for-image img { max-width: 100%; vertical-align: middle; display: table-cell; margin:0px auto;}
+article section.display-images ul li .title { width: 100%; min-height:20px; max-height:50px; font-size: 15px; text-transform: uppercase; line-height:30px; overflow: hidden; }
+article section.display-images ul li .desc { width: 100%; min-height:50px; max-height: 100px; font-size:12px; line-height: 30px;}
+
+footer { width: 100%; float: left; font-size:14px; text-align: center; padding: 20px 0px; text-transform: uppercase; letter-spacing: 3px;}
+footer p{ padding-bottom: 10px;}
+footer .first { color: #999b9a; }
+footer .first.last { padding-bottom:20px;}
+footer .second { color: #dadedf; }
+
+
+@media only screen and (max-width: 1024px) {
+	article section.display-images ul { width: 80%;}
+	nav { width:90%;}
+	nav a { font-size: 14px;}
+	nav a.left { width: 17%;}
+	nav a.right { width: 12%;}
+	nav a.home { font-size: 32px; width:20%;}
+}
+
+@media only screen and (max-width: 768px) {
+	nav { margin:50px auto;}
+	nav a { font-size: 11px; margin:0px;}
+	nav a.home { font-size: 25px; margin-bottom: 10px;}
+	article section.display-images ul { width: 70%;}
+	article section.display-images ul li { margin-left: 1%;}
+	header .main { font-size: 40px;}
+}
+
+@media only screen and (max-width: 600px) {
+	nav a { letter-spacing: 1px;}
+	nav a.home { font-size: 20px; margin-bottom: 0px; margin-top:5px; width: 24%;}
+}
+
+@media only screen and (max-width: 480px) {
+	article section.nav-bar { position: relative; margin-bottom: 8px;}
+	nav { width: 60%; margin:80px auto 20px;}
+	nav a { font-size: 12px; letter-spacing: 3px;}
+	nav a.home, nav a.left { width:100%; }
+	nav a.right { width: 32%;}
+	article section.display-images ul { width: 80%;}
+	nav a.home { position: absolute; top:20px; left:0px; font-size:40px; font-weight: normal; }
+	article section.display-images ul li .title, article section.display-images ul li .desc { text-align: center; width:90%}
+	header { font-size:15px; line-height: 30px; padding: 30px 0px;}
+	header .main { font-size: 22px; }
+	footer {  font-size:11px; letter-spacing: 1px;}
+}
+@media only screen and (max-width: 360px) {
+	article section.display-images ul { width: 90%;}
+}
+
+@media only screen and (max-width: 320px) {
+	nav { width: 70%; }
+	article section.display-images ul { width: 97%;}
+	nav a.right { width: 33%; letter-spacing:1px;} 
+	nav a.left { letter-spacing:1px; }
+}
